@@ -542,10 +542,6 @@ body {
         justify-content: center;
     }
 
-    .back_btn {
-        transform: translatex(5%);
-    }
-
     .top_img,
     .foot_img {
         margin-left: 0;
