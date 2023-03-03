@@ -836,12 +836,12 @@ input:focus {
     }
 
     textarea {
-        height: 250px;
+        height: 230px;
     }
 
     .contact_conteiner label {
         display: block;
-        margin-bottom: 24px;
+        margin-bottom: 30px;
         width: 240px;
     }
 
