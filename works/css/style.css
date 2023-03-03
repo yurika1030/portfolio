@@ -336,6 +336,10 @@ body {
         border-bottom: none;
     }
 
+    .header_title {
+        margin-left: 20px;
+    }
+
     .footer_wrap {
         border-bottom: none;
     }
@@ -479,6 +483,10 @@ body {
         margin-top: 50px;
     }
 
+    .works_list ul li {
+        margin-left: 0;
+    }
+
     .header_wrap {
         top: 10px;
     }
@@ -512,6 +520,7 @@ body {
 
     .lead {
         display: block;
+        margin-left: 0;
     }
 
     .lead h2 {
@@ -530,11 +539,6 @@ body {
 
     .sp_contents {
         justify-content: center;
-    }
-
-    .top_img,
-    .foot_img {
-        transform: translatex(-45%);
     }
 
     .back_btn {
