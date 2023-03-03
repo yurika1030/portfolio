@@ -1,0 +1,433 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #2b2b2b;
+    font-family: "dnp-shuei-nmincho-std", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    /*0.3秒かけてかわる*/
+    transition: 0.3s;
+}
+
+a:hover {
+    /*不透明度*/
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*ここから*/
+
+body {
+    background-image: url(../images/bg.jpg);
+    background-size: 100% auto;
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1000px;
+    margin: 25px auto;
+    box-sizing: content-box;
+    border-bottom: 1px solid rgba(58, 58, 58, 0.45);
+    z-index: 99;
+}
+
+.header_title {
+    font-size: 55px;
+}
+.pc_nav ul {
+    display: flex;
+}
+
+.pc_nav ul li {
+    width: 73px;
+    margin-left: 42px;
+}
+
+.sp_nav,
+.sp_btn,
+.sp_only {
+    display: none;
+}
+
+.section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    margin-top: 115px;
+    margin-left: 10px;
+    font-size: 80px;
+    font-family: "adorn-garland", sans-serif;
+    color: #724e33;
+    opacity: 0.45;
+}
+
+.section p {
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.about_contents {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.about_img {
+    width: 30%;
+    height: 30%;
+    margin-left: 10px;
+}
+
+.about_text {
+    width: 70%;
+    margin-left: 20px;
+}
+
+.about_text div {
+    margin-bottom: 20px;
+}
+
+.about_text p {
+    color: #8c8b8b;
+    width: 100px;
+    margin-right: 30px;
+}
+
+.about_text img {
+    margin-top: 20px;
+}
+.name,
+.job,
+.bloodtype,
+.adress,
+.message {
+    display: flex;
+}
+
+.name div {
+    width: 100%;
+    border-bottom: 1px solid #8c8b8b;
+}
+
+.job div {
+    width: 100%;
+    border-bottom: 1px solid #8c8b8b;
+}
+
+.bloodtype div {
+    width: 100%;
+    border-bottom: 1px solid #8c8b8b;
+}
+
+.adress div {
+    width: 100%;
+    border-bottom: 1px solid #8c8b8b;
+}
+
+.message {
+    position: relative;
+}
+
+.message div {
+    width: 100%;
+}
+
+.footer_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    box-sizing: content-box;
+    border-bottom: 1px solid rgba(58, 58, 58, 0.45);
+}
+
+.footer_title {
+    font-size: 55px;
+}
+
+.footer_title span {
+    font-family: "adorn-garland", sans-serif;
+    font-size: 35px;
+}
+
+.to_top {
+    width: 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.6s;
+    /*デフォルトで非表示にする*/
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*このクラスが付与されると表示する*/
+.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.to_top p {
+    font-size: 23px;
+}
+
+.to_top img {
+    width: 46px;
+}
+
+.copyright {
+    text-align: center;
+    margin: 55px 0;
+}
+
+@media screen and (max-width: 1100px) {
+    .pc_nav {
+        display: none;
+    }
+
+    .pc_only {
+        display: none;
+    }
+
+    .sp_only {
+        display: block;
+    }
+
+    .header_wrap {
+        border-bottom: none;
+    }
+
+    .header_title {
+        margin-left: 20px;
+    }
+
+    .footer_wrap {
+        border-bottom: none;
+    }
+
+    .footer_title {
+        margin: 0 10px 0 auto;
+    }
+
+    /*ハンバーガー*/
+
+    .sp_btn {
+        position: absolute;
+        top: 30px;
+        right: 25px;
+        display: block;
+        height: 23px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .sp_btn span {
+        position: relative;
+        top: 10px;
+        display: block;
+        width: 33px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #636363;
+        opacity: 0.5;
+    }
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 33px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #636363;
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+    .sp_btn span::after {
+        top: 10px;
+    }
+
+    /*ハンバーガー閉じる*/
+    .sp_btn.open span {
+        background: transparent;
+    }
+    .sp_btn.open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+        background-color: #dddcdc;
+    }
+    .sp_btn.open span::after {
+        top: 0;
+        transform: rotate(135deg);
+        background-color: #dddcdc;
+    }
+
+    /*ハンバーガーメニュー*/
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #4c4c4c;
+        opacity: 0.9;
+        z-index: 1;
+    }
+    .sp_nav ul {
+        display: flex;
+        flex-direction: column;
+        flex-direction: center;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .sp_nav ul li {
+        padding: 20px;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .icon {
+        margin: -200px auto 0;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        width: 80px;
+    }
+
+    .icon a {
+        width: 29px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section {
+        max-width: 315px;
+    }
+
+    .section h2 {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .section p {
+        margin-top: 8px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .header_wrap {
+        top: 10px;
+    }
+
+    .header_title {
+        font-size: 30px;
+    }
+
+    .title {
+        margin: 100px auto 0;
+    }
+
+    .about_contents {
+        display: block;
+    }
+
+    .about_img {
+        width: 70%;
+        height: 25%;
+        margin: 0 auto 20px;
+    }
+
+    .about_text {
+        width: 100%;
+    }
+
+    .about_text p {
+        margin: 0 auto;
+    }
+
+    .about_text div {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .message div {
+        background-image: none;
+        border-top: 1px solid #8c8b8b;
+        border-bottom: 1px solid #8c8b8b;
+    }
+
+    .name,
+    .job,
+    .bloodtype,
+    .adress,
+    .message div {
+        margin-top: 20px;
+    }
+
+    .footer_title {
+        font-size: 30px;
+    }
+
+    .footer_title span {
+        font-size: 25px;
+    }
+
+    .to_top p {
+        display: none;
+    }
+}

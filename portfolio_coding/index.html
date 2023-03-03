@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO.YOU</title>
+    <meta name="description" content="山口県で活動しているwebデザイナー”YURIKA”のポートフォリオサイトです">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <script>
+        //フォントのJS//
+        (function (d) {
+            var config = {
+                kitId: 'xfq7kzk',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+
+
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <picture>
+                <source srcset="images/top_img_sp@2x-80.jpg" media=" (max-width: 767px)">
+                <img src="images/top_img@2x-80.jpg" alt="手紙">
+            </picture>
+        </div>
+
+        <div id="header_slider" class="header_wrap">
+            <span class="header_border"></span>
+
+            <a href="index.html">
+                <h1 class="header_title">TO.YOU</h1>
+            </a>
+
+            <nav class="pc_nav">
+                <ul>
+
+                    <li><a href="#service">SERVICE</a></li>
+                    <li><a href="works/index.html">WORKS</a></li>
+                    <li><a href="#skill">SKILL</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+
+            </nav>
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+
+                    <li><a href="#service">SERVICE</a></li>
+                    <li><a href="works/index.html">WORKS</a></li>
+                    <li><a href="#skill">SKILL</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+
+
+                </ul>
+
+                <div class="icon">
+                    <a href="https://www.instagram.com/t_yurika0520/"><img src="images/Instagram_sp.svg"
+                            alt="インスタグラムのアイコン"></a>
+                    <a href="#contact"><img src="images/mail_sp.svg" alt="メールのアイコン"></a>
+                </div>
+            </nav>
+        </div>
+        <div class="scrolldown"><span>Scroll</span></div>
+        <ul class="top_icon">
+            <li><a href="https://www.instagram.com/t_yurika0520/"><img src="images/Instagram.svg"
+                        alt="インスタグラムのアイコン"></a></li>
+            <li><a href="#contact"><img src="images/contact.svg" alt="メールのアイコン"></a></li>
+        </ul>
+
+
+    </header>
+    <main>
+        <div class="top_wrap pc_only">
+            <p class="lead1 element">TO.YOU</p>
+            <div class="letter element">
+                <p class="lead2">このサイトを見ているあなたへ。<br>
+                    はじめまして。<br class="sp_only">このサイトは、私から「 あなた 」へ向けた手紙です。<br class="pc_only">
+                    “TO. YOU”には、あなたに向けた、あなたのためだけにある、世界に1つの<br class="pc_only">
+                    ウェブデザインを提案したいという想いを込めています。<br class="pc_only">
+                    あなたは今どんなデザインが欲しいと想像していますか。<br class="pc_only">
+                    私は、あなたの中にあるその“想像”を見えるカタチに“創造”します。</p>
+            </div>
+
+            <p class="lead3 element">yurika</p>
+        </div>
+
+        <div class="top_wrap sp_only load-fade">
+            <p class="lead1">TO.YOU</p>
+            <div class="letter">
+                <p class="lead2">このサイトを見ているあなたへ。<br>
+                    はじめまして。<br class="sp_only">このサイトは、私から「 あなた 」へ向けた手紙です。<br class="pc_only">
+                    “TO. YOU”には、あなたに向けた、あなたのためだけにある、世界に1つの<br class="pc_only">
+                    ウェブデザインを提案したいという想いを込めています。<br class="pc_only">
+                    あなたは今どんなデザインが欲しいと想像していますか。<br class="pc_only">
+                    私は、あなたの中にあるその“想像”を見えるカタチに“創造”します。</p>
+            </div>
+
+            <p class="lead3">yurika</p>
+        </div>
+
+        <section id="service" class="section">
+            <h2 class="element">service</h2>
+            <p class="element">提供できること</p>
+            <ul class="service_contents">
+                <li>
+                    <div><img src="images/direction.svg" alt="ペンと紙のイラスト"></div>
+
+                    <h3>ディレクション</h3>
+                    <p>まず、お客様の要望を丁寧に、ヒアリングしていきます。どういう効果を得たいのか、そのためにどのような要素が必要であるかを、綿密に計画していきます。</p>
+                </li>
+                <li>
+                    <div><img src="images/design.svg" alt="ペイントのイラスト"></div>
+
+                    <h3>デザイン</h3>
+                    <p>ホームページ、LPやバナーなどのウェブ制作から、名刺、ショップカード、チラシなどの印刷物まで、様々なデザインを承ります。</p>
+                </li>
+                <li>
+                    <div><img src="images/cording.svg" alt="パソコンのキーボードのイラスト"></div>
+
+                    <h3>コーディング</h3>
+                    <p>どのデバイスで見ても、見やすいようにコーディング（レスポンシブ対応）いたします。
+                        JSを使って動きのあるサイトを作成することも可能です。</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="works" class="section">
+            <h2 class="element">works</h2>
+            <p class="element">制作したもの</p>
+        </section>
+
+        <ul class="works_slider">
+            <li><a href="works/work1.html"><img src="images/works_1@2x.png" alt="携帯料金プランバナー"></a></li>
+            <li><a href="works/work2.html"><img src="images/works_2@2x.png" alt="旅行支援アプリ広告バナー"></a></li>
+            <li><a href="works/work3/index.html"><img src="images/works_3@2x.png" alt="ハンバーガー広告"></a></li>
+            <li><a href="works/work4.html"><img src="images/works_4@2x.png" alt="ヘアサロンLPサイト"></a></li>
+            <li><a href="works/work5.html"><img src="images/works_5@2x.png" alt="コワーキングスペース紹介LPサイト"></a></li>
+            <li><a href="works/work6.html"><img src="images/works_6@2x.png" alt="カフェサイト"></a></li>
+
+        </ul>
+
+
+
+
+        <div class="all_btn btn">
+            <a href="works/index.html">
+                <p>ALL</p>
+            </a>
+            <div class="arrow">
+                <div class="line01"></div>
+                <div class="line02"></div>
+            </div>
+        </div>
+
+
+        <section id="about" class="section">
+            <h2 class="element">about</h2>
+            <p class="element">私について</p>
+
+            <div class="about_container">
+                <img src="images/profile@2x.png" alt="私の顔写真">
+                <div class="text_contents">
+                    <p class="name">YURIKA　-ゆりか-（1995.10.30）</p>
+                    <p class="job">ウェブデザイナー/グラフィックデザイナー</p>
+                    <p class="comment">公務員からデザインの世界へ。<br>
+                        お客様の要望と真摯に向き合い、<br>
+                        共にデザインを創り上げていく姿勢を<br class="sp_only">モットーに。
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="more_btn btn">
+            <a href="about/index.html">
+                <p>MORE</p>
+            </a>
+            <div class="arrow">
+                <div class="line01"></div>
+                <div class="line02"></div>
+            </div>
+        </div>
+
+
+        <section id="skill" class="section">
+            <h2 class="element">skill</h2>
+            <p class="element">できること</p>
+            <ul class="skill_contents">
+                <li><img src="images/AI.svg" alt="illustratorのアイコン">
+                    <p>Illustrator</p>
+                </li>
+                <li><img src="images/PS.svg" alt="Photoshopのアイコン">
+                    <p>Photoshop</p>
+                </li>
+                <li><img src="images/JS.svg" alt="Javascriptのアイコン">
+                    <p>Javascript</p>
+                </li>
+
+            </ul>
+            <ul class="skill_contents">
+                <li><img src="images/VScode.svg" alt="VScodeのアイコン">
+                    <p>VScode</p>
+                </li>
+                <li><img src="images/HTML.svg" alt="HTMLのアイコン">
+                    <p>HTML</p>
+                </li>
+                <li><img src="images/CSS.svg" alt="CSSのアイコン">
+                    <p>CSS</p>
+                </li>
+                <li><img src="images/Figma.svg" alt="Figmaのアイコン">
+                    <p>Figma</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="element">contact</h2>
+            <p class="element">手紙を送ってみる</p>
+
+            <div class="contact_body pc_only" style="background-image: url(images/contact@2x.png);">
+
+                <form class="contact_conteiner"
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdIMToF7KMPUNKUfMbcX-fyt11caj2O5CMhhmn9PnjzJWh-0Q/formResponse"
+                    target="hidden_iframe" onsubmit="submitted=true;">
+
+                    <label>
+                        <input type="text" name="entry.1405721956" placeholder="名前" required>
+                    </label>
+                    <label>
+                        <input type="text" name="entry.1474901579" placeholder="メールアドレス" required>
+                    </label>
+                    <label>
+                        <textarea type="text" name="entry.587518478" placeholder="メッセージ" required></textarea>
+                    </label>
+
+                    <p class="announce">Put in the post</p>
+                    <button type="submit">
+                        <img src="images/POST.svg" alt="ポストのイラスト"></button>
+                </form>
+                <script type="text/javascript">var submitted = false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                    onload="if(submitted){window.location='thanks/index.html';}"></iframe>
+            </div>
+
+
+            <div class="contact_body sp_only" style="background-image: url(images/contact_sp@2x.png);">
+                <form class="contact_conteiner"
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdIMToF7KMPUNKUfMbcX-fyt11caj2O5CMhhmn9PnjzJWh-0Q/formResponse"
+                    target="hidden_iframe" onsubmit="submitted=true;">
+
+                    <label>
+                        <input type="text" name="entry.1405721956" placeholder="名前" required>
+                    </label>
+                    <label>
+                        <input type="text" name="entry.1474901579" placeholder="メールアドレス" required>
+                    </label>
+                    <label>
+                        <textarea type="text" name="entry.587518478" placeholder="メッセージ" required></textarea>
+                    </label>
+
+                    <p class="announce">Put in the post</p>
+                    <button type="submit">
+                        <img src="images/POST.svg" alt="ポストのイラスト"></button>
+                </form>
+                <script type="text/javascript">var submitted = false;</script>
+                <iframe name="hidden_iframe" class="hidden_iframe" style="display:none;"
+                    onload="if(submitted){window.location='thanks/index.html';}"></iframe>
+            </div>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer_wrap">
+
+
+
+
+            <nav class="pc_nav">
+                <ul>
+
+                    <li><a href="#service">SERVICE</a></li>
+                    <li><a href="works/index.html">WORKS</a></li>
+                    <li><a href="#skill">SKILL</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+
+            </nav>
+            <div class="footer_title">FROM. <span>yurika</span>
+            </div>
+        </div>
+
+
+
+        <div class="to_top">
+
+
+            <a href="#header_slider">
+                <p>TO TOP</p>
+            </a>
+            <a href="#header_slider"><img src="images/to_top.svg" alt="トップへ戻る"></a>
+
+
+        </div>
+
+        <p class="copyright">© 2023 TO.YOU all right reserved.</p>
+
+    </footer>
+    <script>
+        $(function () {
+
+
+            $('.sp_btn,.sp_nav li').on('click', function () {
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
+            });
+
+            $('.works_slider').slick({
+                infinite: true,
+                arrows: true,
+                speed: 400,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            });
+
+            $(window).scroll(function () {
+                const windowHeight = $(window).height();
+                const scroll = $(window).scrollTop();
+
+                $('.element').each(function () {
+                    const targetPosition = $(this).offset().top;
+                    if (scroll > targetPosition - windowHeight + 100) {
+                        $(this).addClass("is-fadein");
+                    }
+                });
+            });
+
+
+        });
+        $(function () {
+            // 変数にクラスを入れる
+            var btn = $('.to_top');
+
+            //スクロールしてページトップから100に達したらボタンを表示
+            $(window).on('load scroll', function () {
+                if ($(this).scrollTop() > 1000) {
+                    btn.addClass('active');
+                } else {
+                    btn.removeClass('active');
+                }
+            });
+        });
+
+        $(function () {
+            load_effect();
+            $(window).scroll(function () {
+                scroll_effect();
+            });
+        });
+
+        function load_effect() {
+            var tt = $(window).scrollTop();
+            var hh = $(window).height();
+            $('.load-fade').each(function () {
+                var yy = $(this).offset().top;
+                if (tt > yy - hh) {
+                    $(this).addClass('done');
+                }
+            });
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
