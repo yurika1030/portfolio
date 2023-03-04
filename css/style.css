@@ -733,7 +733,7 @@ input:focus {
 
     .load-fade {
         opacity: 0;
-        transition: all 4s /*処理にかかる時間*/;
+        transition: all 10s /*処理にかかる時間*/;
     }
 
     .load-fade.done {
