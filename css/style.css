@@ -61,6 +61,27 @@ body {
     background-size: 100% auto;
 }
 
+/* トップアニメーション */
+.animation {
+    position: absolute;
+    top: 39%;
+    left: 25%;
+    width: 27%;
+}
+#svg-animation {
+    width: 100%;
+}
+#svg-animation .st0 {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 9px;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+}
+/*ここまで*/
+
 header {
     position: relative;
 }
@@ -678,8 +699,15 @@ input:focus {
 }
 
 @media screen and (max-width: 767px) {
+    .animation {
+        position: absolute;
+        top: 40%;
+        left: 15%;
+        width: 42%;
+    }
+
     .icon {
-        margin: -210px auto 0;
+        margin: -205px auto 0;
     }
 
     .section {
@@ -881,5 +909,9 @@ input:focus {
 
     .to_top p {
         display: none;
+    }
+
+    button {
+        background-color: transparent;
     }
 }

@@ -341,7 +341,7 @@ body {
     }
 
     .icon {
-        margin: -200px auto 0;
+        margin: -100px auto 0;
         align-items: center;
         display: flex;
         justify-content: space-between;
@@ -435,6 +435,6 @@ body {
     }
 
     .icon {
-        margin: -210px auto 0;
+        margin: -205px auto 0;
     }
 }
