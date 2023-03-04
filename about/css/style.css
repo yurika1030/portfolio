@@ -433,4 +433,8 @@ body {
     .to_top p {
         display: none;
     }
+
+    .icon {
+        margin: -220px auto 0;
+    }
 }

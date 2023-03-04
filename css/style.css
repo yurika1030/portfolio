@@ -665,7 +665,7 @@ input:focus {
     }
 
     .icon {
-        margin: -200px auto 0;
+        margin: -100px auto 0;
         align-items: center;
         display: flex;
         justify-content: space-between;
@@ -679,7 +679,7 @@ input:focus {
 
 @media screen and (max-width: 767px) {
     .icon {
-        margin: -100px auto 0;
+        margin: -220px auto 0;
     }
 
     .section {

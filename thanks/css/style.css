@@ -355,4 +355,8 @@ p {
     p {
         font-size: 16px;
     }
+
+    .icon {
+        margin: -220px auto 0;
+    }
 }
