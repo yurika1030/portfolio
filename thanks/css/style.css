@@ -220,6 +220,10 @@ p {
         border-bottom: none;
     }
 
+    .header_title {
+        margin-left: 20px;
+    }
+
     .footer_title {
         margin: 0 10px 0 auto;
     }
